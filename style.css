@@ -72,10 +72,10 @@ html{scroll-padding-top:105px}
 /* Tres destellos decorativos para la página de estrellas */
 .stars-section{position:relative;overflow:hidden;isolation:isolate}
 .stars-section>*{position:relative;z-index:1}
-.stars-section:before{content:"★";position:absolute;right:3.5%;top:2.3rem;color:#ffe45e;font-size:5rem;line-height:1;transform:rotate(13deg);opacity:.72;z-index:0;pointer-events:none}
+.stars-section:before{content:"★";position:absolute;right:3.5%;top:2.3rem;color:#ffd51f;font-size:5rem;line-height:1;transform:rotate(13deg);opacity:.94;z-index:0;pointer-events:none;-webkit-text-stroke:2px #6f3cc3;text-shadow:4px 5px 0 rgba(255,59,157,.24)}
 .stars-section:after{content:"★";position:absolute;left:2.2%;bottom:2rem;color:#ff3b9d;font-size:3.2rem;line-height:1;transform:rotate(-16deg);opacity:.25;z-index:0;pointer-events:none}
 .stars-section .section-heading:after{content:"✦";color:#6f3cc3;font-size:2.1rem;line-height:1;margin-left:auto;transform:rotate(10deg);opacity:.55}
 
 /* Fotos alternativas para que las dos apariciones de cada grupo sean distintas */
-.mock-cover{background-image:linear-gradient(0deg,rgba(28,5,32,.82),transparent 60%),url("images/bsb-alt.jpg");background-position:center;background-size:cover}
-.personal-cover{background-image:linear-gradient(0deg,rgba(40,8,47,.78),transparent 65%),url("images/spicegirls-alt.jpg");background-position:center;background-size:cover}
+.mock-cover{background-image:linear-gradient(0deg,rgba(28,5,32,.82),transparent 60%),url("bsb-alt.jpg");background-position:center;background-size:cover}
+.personal-cover{background-image:linear-gradient(0deg,rgba(40,8,47,.78),transparent 65%),url("spicegirls-alt.jpg");background-position:center;background-size:cover}
