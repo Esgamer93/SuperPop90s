@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Un homenaje no oficial a Superpop y a la cultura pop de los años 90.">
+  <meta property="og:title" content="Superpop 90s/2000s — Fan Web">
+  <meta property="og:description" content="Música, moda, tests, horóscopos y nostalgia en una revista digital homenaje.">
+  <meta property="og:image" content="https://esgamer93.github.io/SuperPop90s/images/og.png">
+  <meta property="og:url" content="https://esgamer93.github.io/SuperPop90s/">
+  <meta name="twitter:card" content="summary_large_image">
   <title>Superpop 90s — Fan Web</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,13 +27,14 @@
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="menu">☰ <span>Menú</span></button>
     <nav class="main-nav" id="menu" aria-label="Menú principal">
-      <a href="#revista">La revista</a><a href="#estrellas">Estrellas</a><a href="#moda">Moda</a><a href="#test">Test</a><a href="#horoscopo">Horóscopo</a><a href="#club">Club</a>
+      <a href="#revista">La revista</a><a href="#estrellas">Estrellas</a><a href="#poster">Póster</a><a href="#moda">Moda</a><a href="#test">Test</a><a href="#consultorio">Consultorio</a><a href="#club">Club</a>
     </nav>
   </header>
 
   <main id="contenido">
     <section class="hero" id="inicio">
       <div class="hero-copy">
+        <div class="issue-meta"><span>N.º 2000</span><span>Edición homenaje</span><span>¡Nuevo!</span></div>
         <span class="kicker">Tu kiosco favorito ha vuelto</span>
         <h1>¡La nostalgia más <em>superpop</em>!</h1>
         <p>Ídolos, looks imposibles, flechazos, tests y canciones grabadas en cassette. Abre la carpeta y vuelve a los 90.</p>
@@ -42,6 +48,18 @@
           <div class="cover-bottom"><strong>BACKSTREET BOYS</strong><span>Sus secretos, sus canciones y el póster que querrás colgar</span></div>
         </article>
       </div>
+    </section>
+
+    <section class="section pop-files" id="reportajes">
+      <div class="section-heading"><span class="issue">02B</span><div><p class="eyebrow">Mega reportaje</p><h2>Del último 90 al primer 2000</h2></div></div>
+      <p class="lead pop-intro">Cuatro nombres, cuatro energías y una década que cambió a toda velocidad. De las baladas de cine al pop coreografiado y las guitarras del instituto.</p>
+      <div class="pop-grid">
+        <article class="pop-profile big"><img src="images/britney-2003.jpg" alt="Britney Spears actuando en 2003" loading="lazy"><div><span class="profile-tag">Princesa del pop</span><h3>Britney Spears</h3><p>Coreografías inolvidables, videoclips convertidos en acontecimiento y una estética que definió el cambio de milenio.</p></div></article>
+        <article class="pop-profile"><img src="images/avril-2002.jpg" alt="Avril Lavigne tocando la guitarra en 2002" loading="lazy"><div><span class="profile-tag">Pop punk</span><h3>Avril Lavigne</h3><p>Corbata, guitarra y actitud: la alternativa rockera que conquistó agendas y carpetas.</p></div></article>
+        <article class="pop-profile"><img src="images/beyonce-2003.jpg" alt="Beyoncé actuando en 2003" loading="lazy"><div><span class="profile-tag">Nueva era</span><h3>Beyoncé</h3><p>Talento, presencia y un debut en solitario que anunciaba una nueva gran estrella.</p></div></article>
+        <article class="pop-profile wide"><img src="images/leo-2000.jpg" alt="Leonardo DiCaprio durante una rueda de prensa en 2000" loading="lazy"><div><span class="profile-tag">Flechazo de cine</span><h3>Leonardo DiCaprio</h3><p>Después de <em>Titanic</em>, cada nuevo estreno volvía a encender la Leo manía.</p></div></article>
+      </div>
+      <details class="photo-credits"><summary>Créditos de las fotografías</summary><p>Imágenes procedentes de Wikimedia Commons: Britney Spears (U.S. Navy, dominio público), Avril Lavigne en 2002, Leonardo DiCaprio (Jaud, CC BY-SA 3.0) y Beyoncé en 2003 (Roger Woolman, CC BY 3.0). Las imágenes de Spice Girls y Backstreet Boys pertenecen al archivo aportado originalmente al proyecto.</p></details>
     </section>
 
     <section class="marquee-strip"><span>WALKMAN</span><span>CHUPA CHUPS</span><span>TAMAGOTCHI</span><span>VHS</span><span>DISC-MAN</span><span>FOTOMATÓN</span></section>
@@ -64,8 +82,36 @@
       </div>
     </section>
 
+    <section class="section poster-lab" id="poster">
+      <div class="section-heading"><span class="issue">03</span><div><p class="eyebrow">Regalo central</p><h2>Tu portada Superpop personalizada</h2></div></div>
+      <div class="poster-layout">
+        <div class="poster-controls">
+          <p class="lead">Escribe tu nombre y elige la energía de tu portada. Como aquella vez que imaginaste salir en el próximo número.</p>
+          <label for="cover-name">Nombre de portada</label>
+          <input id="cover-name" maxlength="18" placeholder="Tu nombre">
+          <fieldset class="cover-vibes"><legend>Tu especial</legend><label><input type="radio" name="vibe" value="¡Reina del pop!" checked> Pop star</label><label><input type="radio" name="vibe" value="¡Estilo total!"> Moda</label><label><input type="radio" name="vibe" value="¡Amistad forever!"> Pandilla</label></fieldset>
+          <button class="btn primary" id="make-cover" type="button">Crear mi portada</button>
+          <p class="privacy-note">Todo sucede en tu navegador: no guardamos tu nombre.</p>
+        </div>
+        <article class="personal-cover" aria-live="polite">
+          <div class="personal-logo">SUPERPOP</div><span class="personal-date">Especial 90s/2000s</span>
+          <div class="cover-splash">¡TEST<br>EXCLUSIVO!</div>
+          <div class="personal-headline"><small>Esta semana...</small><strong id="cover-output">¡TÚ eres la estrella!</strong><span id="vibe-output">¡Reina del pop!</span></div>
+          <div class="cover-chips"><span>Moda</span><span>Música</span><span>Amor</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section time-machine" id="maquina-tiempo">
+      <div class="section-heading"><span class="issue">04</span><div><p class="eyebrow">De 1995 a 2005</p><h2>La máquina del tiempo pop</h2></div></div>
+      <div class="timeline-tabs" role="tablist" aria-label="Años de la cultura pop">
+        <button class="year-tab active" role="tab" aria-selected="true" data-year="1995">1995</button><button class="year-tab" role="tab" aria-selected="false" data-year="1997">1997</button><button class="year-tab" role="tab" aria-selected="false" data-year="1999">1999</button><button class="year-tab" role="tab" aria-selected="false" data-year="2001">2001</button><button class="year-tab" role="tab" aria-selected="false" data-year="2003">2003</button>
+      </div>
+      <div class="timeline-story" id="timeline-story"><span class="timeline-emoji">📼</span><div><p class="eyebrow">1995</p><h3>Carpetas, cassettes y llamadas al fijo</h3><p>Las canciones se grababan de la radio y una llamada podía durar hasta que alguien necesitaba usar el teléfono.</p></div></div>
+    </section>
+
     <section class="section fashion" id="moda">
-      <div class="section-heading"><span class="issue">03</span><div><p class="eyebrow">Especial estilo</p><h2>El armario más noventero</h2></div></div>
+      <div class="section-heading"><span class="issue">05</span><div><p class="eyebrow">Especial estilo</p><h2>El armario más noventero</h2></div></div>
       <div class="fashion-grid">
         <article><span class="fashion-icon">👟</span><h3>Plataformas</h3><p>Cuanto más altas, mejor. Las zapatillas y botas se convirtieron en protagonistas.</p></article>
         <article><span class="fashion-icon">🦋</span><h3>Mini accesorios</h3><p>Clips mariposa, chokers, anillos de plástico y pasadores de todos los colores.</p></article>
@@ -88,8 +134,21 @@
     </section>
 
     <section class="section horoscope" id="horoscopo">
-      <div class="section-heading"><span class="issue">04</span><div><p class="eyebrow">Consultorio cósmico</p><h2>Tu horóscopo exprés</h2></div></div>
+      <div class="section-heading"><span class="issue">06</span><div><p class="eyebrow">Consultorio cósmico</p><h2>Tu horóscopo exprés</h2></div></div>
       <div class="horoscope-box"><label for="sign">Elige tu signo</label><select id="sign"><option value="">— Tu signo —</option><option>Aries</option><option>Tauro</option><option>Géminis</option><option>Cáncer</option><option>Leo</option><option>Virgo</option><option>Libra</option><option>Escorpio</option><option>Sagitario</option><option>Capricornio</option><option>Acuario</option><option>Piscis</option></select><p id="horoscope-result">Las estrellas aún están buscando tu mensaje…</p></div>
+    </section>
+
+    <section class="section consultorio" id="consultorio">
+      <div class="section-heading"><span class="issue">07</span><div><p class="eyebrow">Entre tú y yo</p><h2>Consultorio Superpop</h2></div></div>
+      <div class="consultorio-grid">
+        <article class="letter"><span class="tape">✦ CONFIDENCIAL ✦</span><h3>“Mi mejor amiga y yo estamos distanciadas”</h3><p>Antes hablábamos de todo, pero últimamente siento que ya no cuenta conmigo. No quiero perder nuestra amistad.</p><button class="reveal-advice" aria-expanded="false">Leer el consejo</button><div class="advice" hidden><strong>Nuestra respuesta:</strong> Busca un momento tranquilo y habla desde lo que sientes, sin acusaciones. Una amistad también necesita espacio, escucha y una oportunidad para reconectar.</div></article>
+        <article class="letter lilac"><span class="tape">★ FLECHAZO ★</span><h3>“Me gusta alguien y no sé cómo decírselo”</h3><p>Cada vez que le veo me quedo en blanco. ¿Doy el primer paso o espero alguna señal?</p><button class="reveal-advice" aria-expanded="false">Leer el consejo</button><div class="advice" hidden><strong>Nuestra respuesta:</strong> Empieza por compartir una conversación sencilla y descubre si existe complicidad. Ser valiente no significa precipitarse: significa ser tú sin fingir.</div></article>
+      </div>
+    </section>
+
+    <section class="section scrapbook">
+      <div class="section-heading"><span class="issue">08</span><div><p class="eyebrow">Tu carpeta</p><h2>Objetos que cuentan una época</h2></div></div>
+      <div class="scrap-grid"><article><span>📟</span><strong>Busca</strong><small>El mensaje más corto podía decirlo todo.</small></article><article><span>💿</span><strong>CD grabado</strong><small>Una selección hecha con paciencia y rotulador.</small></article><article><span>📱</span><strong>Primer móvil</strong><small>Carcasas, politonos y mensajes con límite.</small></article><article><span>📺</span><strong>Tarde de TV</strong><small>Series, videoclips y programas que comentabas al día siguiente.</small></article><article><span>📔</span><strong>Agenda</strong><small>Fotos, pegatinas, firmas y secretos bajo llave.</small></article></div>
     </section>
 
     <section class="section mixtape">
